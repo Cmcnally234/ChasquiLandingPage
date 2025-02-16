@@ -33,7 +33,7 @@ export default function Home() {
         setMessage(data.message || 'Something went wrong. Please try again.');
         setStatus('error');
       }
-    } catch (_error) {
+    } catch {
       setMessage('Unable to connect to the server. Please try again later.');
       setStatus('error');
     }
