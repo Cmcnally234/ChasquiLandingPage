@@ -1,6 +1,5 @@
 'use client';
 import Image from "next/image";
-import axios from 'axios';
 import { useState } from 'react';
 
 export default function Home() {
@@ -34,7 +33,7 @@ export default function Home() {
         setMessage(data.message || 'Something went wrong. Please try again.');
         setStatus('error');
       }
-    } catch (error) {
+    } catch (_error) {
       setMessage('Unable to connect to the server. Please try again later.');
       setStatus('error');
     }
@@ -55,7 +54,7 @@ export default function Home() {
           <h2 className="mb-20 text-custom-size">
             Networking can be hard.
           </h2>
-          <div className="text-xl ml-2"> Let's make it easier. </div>
+          <div className="text-xl ml-2"> Let&apos;s make it easier. </div>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">

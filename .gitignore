@@ -14,3 +14,4 @@ chasquilandingfront/.env.local
 chasquilandingfront/.env.development.local
 chasquilandingfront/.env.test.local
 chasquilandingfront/.env.production.local
+.vercel
